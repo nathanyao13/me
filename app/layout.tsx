@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Lora } from "next/font/google";
 import "./globals.css";
+import Nav from './components/Nav';
 
 const lora = Lora({
   variable: "--font-lora",
@@ -22,7 +23,10 @@ export default function RootLayout({
       lang="en"
       className={`${lora.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Nav />
+        {children}
+      </body>
     </html>
   );
 }

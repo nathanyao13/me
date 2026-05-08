@@ -48,3 +48,7 @@ body {
 .squiggly-link:hover::after {
   clip-path: inset(0 0% 0 0);
 }
+
+a[target="_blank"] {
+  cursor: alias;
+}
