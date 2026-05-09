@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
+
 
 const navItems = [
   { label: 'Nathan', href: '/' },
@@ -34,7 +36,7 @@ export default function Nav() {
             style={{ left: highlight.left, width: highlight.width, top: 4, bottom: 4, opacity: highlight.visible ? 1 : 0 }}
           />
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.href}
               href={item.href}
               onMouseEnter={handleMouseEnter}
@@ -43,7 +45,7 @@ export default function Nav() {
               }`}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </div>
         <div className="flex items-center gap-6">
