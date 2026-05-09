@@ -1,6 +1,9 @@
+import Link from 'next/link';
+
 export default function ArtistCard({ name, image, href }: { name: string; image?: string; href?: string }) {
+  const isExternal = href?.startsWith('http');
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer" className="group relative block h-full w-full overflow-hidden rounded-xl bg-gray-100">
+    <Link href={href ?? '#'} target={isExternal ? '_blank' : undefined} rel={isExternal ? 'noopener noreferrer' : undefined} className="group relative block h-full w-full overflow-hidden rounded-xl bg-gray-100">
 
       {/* Image — scales up on hover */}
       {image && (
@@ -27,6 +30,6 @@ export default function ArtistCard({ name, image, href }: { name: string; image?
         <h2 className="text-4xl font-light text-white leading-tight">{name}</h2>
       </div>
 
-    </a>
+    </Link>
   );
 }
