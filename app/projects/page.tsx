@@ -4,7 +4,7 @@ const projects = [
   {
     title: "Personal Website",
     description: "A personal portfolio site built with Next.js, React, and Tailwind CSS to explore modern front-end development.",
-    link: "https://github.com/nathanyao13/personal_website",
+    link: "https://github.com/nathanyao13/personal_website", image: "/images/personal_website.png"
   },
   {
     title: "Piano-Gen",
@@ -43,8 +43,8 @@ export default function Projects() {
           Things I&apos;ve built — mostly for fun and to learn.
         </p>
         <div className="grid grid-cols-4">
-          {projects.map((project) => (
-            <div key={project.title} className={`px-2 pb-4 ${project.square ? "col-span-1 aspect-square" : "col-span-2 aspect-[2]"}`}>
+          {projects.map((project, i) => (
+            <div key={project.title} className={`px-2 pb-4 card-animate ${project.square ? "col-span-1 aspect-square" : "col-span-2 aspect-[2]"}`} style={{ animationDelay: `${i * 0.05}s` }}>
               <ProjectCard {...project} />
             </div>
           ))}

@@ -31,7 +31,7 @@ export default function Hobbies() {
         </p>
         <div className="grid grid-cols-4">
           {hobbies.map((hobby, i) => (
-            <div key={i} className="col-span-1 aspect-square px-2 pb-4">
+            <div key={i} className="col-span-1 aspect-square px-2 pb-4 card-animate" style={{ animationDelay: `${i * 0.05}s` }}>
               <HobbyCard {...hobby} />
             </div>
           ))}

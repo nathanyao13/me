@@ -37,53 +37,54 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Cards in cols 3–4, rows 1–3 (alongside bio) */}
-          <div className="col-span-1 aspect-square px-2 pb-4">
+          {/* Cards in cols 3–4, rows 1–2 (alongside bio) */}
+          <div className="col-span-1 aspect-square px-2 pb-4 card-animate" style={{ animationDelay: '0.00s' }}>
             <ArtistCard name="Olivia Rodrigo" image="/images/olivia_rodrigo.png" href="/music" />
           </div>
-          <div className="col-span-1 aspect-square px-2 pb-4">
+          <div className="col-span-1 aspect-square px-2 pb-4 card-animate" style={{ animationDelay: '0.05s' }}>
             <HobbyCard name="Copa Del Rey Semifinal" badge="Sports" image="/images/soccer_5.jpeg" href="/hobbies" variant="album" />
           </div>
-          <div className="col-span-1 aspect-square px-2 pb-4">
+          <div className="col-span-1 aspect-square px-2 pb-4 card-animate" style={{ animationDelay: '0.10s' }}>
             <AlbumCard title="The Queen Is Dead" image="/images/queen_is_dead_smiths.png" href="/music" />
           </div>
-          <div className="col-span-1 aspect-square px-2 pb-4">
+          <div className="col-span-1 aspect-square px-2 pb-4 card-animate" style={{ animationDelay: '0.15s' }}>
             <ExperienceCard company="Applovin" role="Software Engineer Intern" date="Summer 2026" description="Current Internship. Ads Experience Team." href="/experience" />
           </div>
-          <div className="col-span-1 aspect-square px-2 pb-4">
+          <div className="col-span-1 aspect-square px-2 pb-4 card-animate" style={{ animationDelay: '0.20s' }}>
             <ExperienceCard company="CMU Machine Learning Department" role="Teaching Assistant" date="Spring 2026" description="Worked as a TA for 10707: Advanced Deep Learning, a graduate-level course on deep learning theory and research." href="/experience" />
           </div>
-          <div className="col-span-1 aspect-square px-2 pb-4">
+          <div className="col-span-1 aspect-square px-2 pb-4 card-animate" style={{ animationDelay: '0.25s' }}>
             <ArtistCard name="Playboi Carti" image="/images/playboi_carti.png" href="/music" />
           </div>
 
           {/* All cards below — full 4 cols */}
-          <div className="col-span-2 aspect-[2] px-2 pb-4">
+          <div className="col-span-2 aspect-[2] px-2 pb-4 card-animate" style={{ animationDelay: '0.30s' }}>
             <ProjectCard title="Piano-Gen" description="" link="/projects" image="/images/piano-gen.png" />
           </div>
-
-          <div className="col-span-1 aspect-square px-2 pb-4">
+          <div className="col-span-1 aspect-square px-2 pb-4 card-animate" style={{ animationDelay: '0.35s' }}>
             <ProjectCard title="Spotipy-Wrapped" description="" link="/projects" image="/images/spotipy.png" square />
           </div>
-          <div className="col-span-1 aspect-square px-2 pb-4">
+          <div className="col-span-1 aspect-square px-2 pb-4 card-animate" style={{ animationDelay: '0.40s' }}>
             <HobbyCard name="New Mexico" badge="Outdoors" image="/images/hike_1.jpeg" href="/hobbies" variant="album" />
           </div>
-          <div className="col-span-1 aspect-square px-2 pb-4">
+          <div className="col-span-1 aspect-square px-2 pb-4 card-animate" style={{ animationDelay: '0.45s' }}>
             <SongCard title="Semi-Charmed Life" artist="Third Eye Blind" image="/images/semi-charmed_life.jpeg" href="/music" />
           </div>
-          <div className="col-span-1 aspect-square px-2 pb-4">
+          <div className="col-span-1 aspect-square px-2 pb-4 card-animate" style={{ animationDelay: '0.50s' }}>
             <HobbyCard name="500 Days of Summer" badge="Film" image="/images/500_days.jpg" href="/hobbies" variant="album" />
           </div>
-
-          <div className="col-span-1 aspect-square px-2 pb-4">
+          <div className="col-span-1 aspect-square px-2 pb-4 card-animate" style={{ animationDelay: '0.55s' }}>
             <SongCard title="Walking on a Dream" artist="Empire of the Sun" image="/images/walking_on_a_dream.png" href="/music" />
           </div>
-          <div className="col-span-1 aspect-square px-2 pb-4">
+          <div className="col-span-1 aspect-square px-2 pb-4 card-animate" style={{ animationDelay: '0.60s' }}>
             <AlbumCard title="3D Country" image="/images/3d_country_geese.jpg" href="/music" />
           </div>
-
-          <div className="col-span-1 aspect-square px-2 pb-4">
+          <div className="col-span-1 aspect-square px-2 pb-4 card-animate" style={{ animationDelay: '0.65s' }}>
             <ProjectCard title="Whos-That-Pokemon" description="" link="/projects" image="/images/who_dat_pokemon.png" square />
+          </div>
+
+          <div className="col-span-1 aspect-square px-2 pb-4 card-animate" style={{ animationDelay: '0.15s' }}>
+            <ExperienceCard company="St. Louis City SC" role="Professional Soccer Player" date="Spring 2023" description="Played MLSNEXT for STLCITYSC academy throughout high school. Held an Amateur contract with STLCITY 2 in MLSNEXT Pro" href="/experience" />
           </div>
 
         </div>

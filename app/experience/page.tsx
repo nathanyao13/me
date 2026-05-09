@@ -54,8 +54,8 @@ export default function Experience() {
           I would describe myself as interdisciplinary.
         </p>
         <div className="grid grid-cols-4">
-          {experiences.map((exp) => (
-            <div key={exp.company} className="col-span-1 aspect-square px-2 pb-4">
+          {experiences.map((exp, i) => (
+            <div key={exp.company} className="col-span-1 aspect-square px-2 pb-4 card-animate" style={{ animationDelay: `${i * 0.05}s` }}>
               <ExperienceCard {...exp} />
             </div>
           ))}

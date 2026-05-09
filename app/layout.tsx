@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Lora } from "next/font/google";
 import "./globals.css";
 import Nav from './components/Nav';
+import Celebi from './components/Celebi';
 
 const lora = Lora({
   variable: "--font-lora",
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <Nav />
         {children}
+        <Celebi />
       </body>
     </html>
   );
