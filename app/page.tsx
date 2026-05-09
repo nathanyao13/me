@@ -51,7 +51,7 @@ export default function Home() {
               <Keyword href="https://athletics.cmu.edu/sports/msoc/index" color="#c41230" external squiggly>CMU Men&apos;s Soccer Team</Keyword>.
               I am interested in{" "}
               <Keyword href="/hobbies" color="#16a34a">Sports</Keyword>,{" "}
-              <Keyword href="/hobbies" color="#6116a3">Music</Keyword>,{" "}
+              <Keyword href="/music" color="#6116a3">Music</Keyword>,{" "}
               <Keyword href="/hobbies" color="#16a34a">Pokémon</Keyword>,{" "}
               <Keyword href="/hobbies" color="#16a34a">Hiking</Keyword>,{" "} and{" "} 
               <Keyword href="/hobbies" color="#16a34a">Movies</Keyword>.
