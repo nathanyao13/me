@@ -8,7 +8,7 @@ export default function ProjectCard({ title, link, image }: {
   square?: boolean;
 }) {
   const isExternal = link?.startsWith('http');
-  const linkProps = { href: link, target: isExternal ? '_blank' as const : undefined };
+  const linkProps = { href: link, target: isExternal ? '_blank' as const : undefined, rel: isExternal ? 'noopener noreferrer' : undefined};
   return (
     <div className="group h-full w-full overflow-hidden rounded-xl bg-gray-100 hover:bg-gray-200 transition-colors duration-300">
       <div className="relative isolate h-full w-full">
