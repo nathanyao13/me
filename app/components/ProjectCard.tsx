@@ -1,23 +1,27 @@
-export default function ProjectCard({ title, description, link, image }: {
+export default function ProjectCard({ title, link, image }: {
   title: string;
   description: string;
   link: string;
   image?: string;
+  square?: boolean;
 }) {
   return (
-    <div className="group border border-gray-200 rounded-xl p-6 overflow-hidden">
-      <div className="flex justify-between items-center mb-4">
-        <p className="text-sm text-gray-400">Projects · {title}</p>
-        <a href={link} target="_blank" className="text-gray-400 group-hover:text-gray-900 rounded-full w-8 h-8 border border-transparent group-hover:border-gray-300 transition-colors inline-flex items-center justify-center">↗</a>
+    <div className="group h-full w-full overflow-hidden rounded-xl bg-gray-100 hover:bg-gray-200 transition-colors duration-300">
+      <div className="relative isolate h-full w-full">
+        <div className="flex items-center justify-between pl-4 pr-2 pt-3 pb-6 text-sm text-gray-500">
+          <p>Projects · {title}</p>
+          <a href={link} target="_blank" className="text-gray-400 group-hover:text-gray-900 rounded-full w-8 h-8 border border-transparent group-hover:border-gray-300 transition-colors inline-flex items-center justify-center">↗</a>
+        </div>
+        <a href={link} target="_blank" className="block h-full w-full">
+          {image && (
+            <img
+              src={image}
+              alt={title}
+              className="absolute h-full w-full object-contain origin-top transition-transform duration-300 group-hover:scale-105"
+            />
+          )}
+        </a>
       </div>
-      <a href={link} target="_blank" className="block overflow-hidden rounded-lg">
-        {image ? (
-          <img src={image} alt={title} className={`w-full h-48 object-contain transition-transform duration-300 group-hover:scale-105`} />
-        ) : (
-          <div className={`bg-gray-100 rounded-lg h-48 transition-transform duration-300 group-hover:scale-105`} />
-        )}
-      </a>
-      <p className="text-sm text-gray-400 mt-4">{description}</p>
     </div>
   );
 }

@@ -42,9 +42,9 @@ export default function Projects() {
         <p className="text-lg text-gray-400 max-w-xl mb-16">
           Things I&apos;ve built — mostly for fun and to learn.
         </p>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-4">
           {projects.map((project) => (
-            <div key={project.title} className={project.square ? "col-span-1" : "col-span-2"}>
+            <div key={project.title} className={`px-2 pb-4 ${project.square ? "col-span-1 aspect-square" : "col-span-2 aspect-[2]"}`}>
               <ProjectCard {...project} />
             </div>
           ))}
