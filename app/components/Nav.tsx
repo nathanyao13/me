@@ -41,7 +41,7 @@ export default function Nav() {
               key={item.href}
               href={item.href}
               onMouseEnter={handleMouseEnter}
-              className={`relative z-10 px-3 py-1 rounded-md text-sm ${
+              className={`relative z-10 px-2 sm:px-3 py-1 rounded-md text-sm ${
                 pathname === item.href ? 'font-semibold text-gray-900' : 'text-gray-500'
               }`}
             >

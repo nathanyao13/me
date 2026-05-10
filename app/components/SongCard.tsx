@@ -16,7 +16,7 @@ export default function SongCard({ title, artist, image, href }: {
       </div>
 
       {/* Left: album cover — scales and rotates on hover */}
-      <div className="flex items-center justify-center w-1/2 pt-6">
+      <div className="hidden sm:flex items-center justify-center w-1/2 pt-6">
         {image && (
           <img
             src={image}
@@ -27,7 +27,7 @@ export default function SongCard({ title, artist, image, href }: {
       </div>
 
       {/* Right: badge + song title + artist */}
-      <div className="flex flex-col w-1/2 pl-4 pt-10">
+      <div className="flex flex-col w-full sm:w-1/2 pl-4 pt-10">
         <span className="inline-block w-fit bg-red-200 text-red-700 text-xs font-semibold px-3 py-1 rounded mb-3 tracking-widest uppercase">
           Song
         </span>

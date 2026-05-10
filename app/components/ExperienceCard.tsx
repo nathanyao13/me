@@ -21,7 +21,7 @@ export default function ExperienceCard({ company, role, date, description, href 
       <div>
         <h3 className="text-lg lg:text-2xl font-light text-gray-900 leading-tight mb-1">{role}</h3>
         <p className="text-sm text-gray-400 mb-2">{company} · {date}</p>
-        <p className="text-base text-gray-900 line-clamp-3">{description}</p>
+        <p className="hidden sm:block text-base text-gray-900 line-clamp-3">{description}</p>
       </div>
 
     </Link>
