@@ -51,7 +51,7 @@ export default function Home() {
             <ExperienceCard company="Applovin" role="Software Engineer Intern" date="Summer 2026" description="Current Internship. Ads Experience Team." href="/experience" />
           </div>
           <div className="col-span-1 aspect-square px-2 pb-4 card-animate" style={{ animationDelay: '0.20s' }}>
-            <ExperienceCard company="CMU Machine Learning Department" role="Teaching Assistant" date="Spring 2026" description="Worked as a TA for 10707: Advanced Deep Learning, a graduate-level course on deep learning theory and research." href="/experience" />
+            <ExperienceCard company="CMU ML Department" role="Teaching Assistant" date="Spring 2026" description="Worked as a TA for 10707: Advanced Deep Learning, a graduate-level course on deep learning theory and research." href="/experience" />
           </div>
           <div className="col-span-1 aspect-square px-2 pb-4 card-animate" style={{ animationDelay: '0.25s' }}>
             <ArtistCard name="Playboi Carti" image="/images/playboi_carti.png" href="/music" />

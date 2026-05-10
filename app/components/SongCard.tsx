@@ -31,7 +31,7 @@ export default function SongCard({ title, artist, image, href }: {
         <span className="inline-block w-fit bg-red-200 text-red-700 text-xs font-semibold px-3 py-1 rounded mb-3 tracking-widest uppercase">
           Song
         </span>
-        <h3 className="text-xl font-semibold text-gray-900 leading-tight mb-1">{title}</h3>
+        <h3 className="text-sm sm:text-xl font-semibold text-gray-900 leading-tight mb-1">{title}</h3>
         <p className="text-sm text-gray-400">{artist}</p>
       </div>
 

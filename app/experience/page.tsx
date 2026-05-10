@@ -16,14 +16,14 @@ const experiences = [
     href: 'https://www.broadcom.com/',
   },
   {
-    company: 'CMU Machine Learning Department',
+    company: 'CMU ML Department',
     role: 'Teaching Assistant',
     date: 'Spring 2026',
     description: 'Worked as a TA for 10707: Advanced Deep Learning, a graduate-level course on deep learning theory and research.',
     href: 'https://mld-instructors.github.io/10707-s26-website/index.html#announcement',
   },
   {
-    company: 'CMU Statistics and Data Science Department',
+    company: 'CMU Stat & DS Department',
     role: 'Teaching Assistant',
     date: 'Spring 2026',
     description: 'Worked as a TA for 36401: Modern Regression, a course on regression methods for applied data analysis.',
