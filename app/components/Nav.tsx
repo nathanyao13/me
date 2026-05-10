@@ -49,7 +49,7 @@ export default function Nav() {
             </Link>
           ))}
         </div>
-        <div className="flex items-center gap-6">
+        <div className="hidden sm:flex items-center gap-6">
           <a href="https://github.com/nathanyao13" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-500 squiggly-link">GitHub</a>
           <a href="https://www.linkedin.com/in/nathanyao13/" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-500 squiggly-link">LinkedIn</a>
           <a href="/files/nathan_yao_resume.pdf" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-500 squiggly-link">Resume</a>

@@ -42,14 +42,14 @@ export default function Music() {
   return (
     <div className="py-12">
       <div className="max-w-screen-2xl mx-auto px-8">
-        <h1 className="text-6xl font-thin text-gray-900 mb-6">music.</h1>
+        <h1 className="text-4xl lg:text-6xl font-thin text-gray-900 mb-6">music.</h1>
         <p className="text-lg text-gray-400 max-w-3xl mb-16">
           I live to listen to music. Here are a few of the many artists, albums, and songs I like.
         </p>
 
 
         <h2 className="text-2xl font-thin text-gray-400 mb-6">artists.</h2>
-        <div className="grid grid-cols-4 mb-16">
+        <div className="grid grid-cols-2 lg:grid-cols-4 mb-16">
           {artists.map((artist, i) => (
             <div key={artist.name} className="col-span-1 aspect-square px-2 pb-4 card-animate" style={{ animationDelay: `${i * 0.05}s` }}>
               <ArtistCard name={artist.name} image={artist.image} href={artist.href} />
@@ -58,7 +58,7 @@ export default function Music() {
         </div>
 
         <h2 className="text-2xl font-thin text-gray-400 mb-6">albums.</h2>
-        <div className="grid grid-cols-4 mb-16">
+        <div className="grid grid-cols-2 lg:grid-cols-4 mb-16">
           {albums.map((album, i) => (
             <div key={album.title} className="col-span-1 aspect-square px-2 pb-4 card-animate" style={{ animationDelay: `${i * 0.05}s` }}>
               <AlbumCard title={album.title} image={album.image} href={album.href} />
@@ -67,7 +67,7 @@ export default function Music() {
         </div>
 
         <h2 className="text-2xl font-thin text-gray-400 mb-6">songs.</h2>
-        <div className="grid grid-cols-4 mb-16">
+        <div className="grid grid-cols-2 lg:grid-cols-4 mb-16">
           {songs.map((song, i) => (
             <div key={song.title} className="col-span-1 aspect-square px-2 pb-4 card-animate" style={{ animationDelay: `${i * 0.05}s` }}>
               <SongCard title={song.title} artist={song.artist} image={song.image} href={song.href} />

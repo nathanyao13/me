@@ -32,7 +32,7 @@ function Inner({ name, badge, image, variant, colors }: {
     <p className="absolute top-3 left-4 z-10 text-sm text-white/80 transition-opacity duration-500 group-hover:opacity-50">Hobbies</p>
     <div className="absolute bottom-0 left-0 right-0 z-10 p-4 transition-opacity duration-500 group-hover:opacity-50">
       <span className={`inline-block text-xs font-semibold px-3 py-1 rounded mb-2 tracking-widest uppercase ${colors.pill}`}>{badge}</span>
-      <h2 className="text-3xl font-light text-white leading-tight">{name}</h2>
+      <h2 className="text-xl lg:text-3xl font-light text-white leading-tight">{name}</h2>
     </div>
   </>;
 }

@@ -49,11 +49,11 @@ export default function Experience() {
   return (
     <div className="py-12">
       <div className="max-w-screen-2xl mx-auto px-8">
-        <h1 className="text-6xl font-thin text-gray-900 mb-6">experience.</h1>
+        <h1 className="text-4xl lg:text-6xl font-thin text-gray-900 mb-6">experience.</h1>
         <p className="text-lg text-gray-400 max-w-xl mb-16">
           I would describe myself as interdisciplinary.
         </p>
-        <div className="grid grid-cols-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4">
           {experiences.map((exp, i) => (
             <div key={exp.company} className="col-span-1 aspect-square px-2 pb-4 card-animate" style={{ animationDelay: `${i * 0.05}s` }}>
               <ExperienceCard {...exp} />

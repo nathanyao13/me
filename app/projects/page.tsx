@@ -38,11 +38,11 @@ export default function Projects() {
   return (
     <div className="py-12">
       <div className="max-w-screen-2xl mx-auto px-8">
-        <h1 className="text-6xl font-thin text-gray-900 mb-6">projects.</h1>
+        <h1 className="text-4xl lg:text-6xl font-thin text-gray-900 mb-6">projects.</h1>
         <p className="text-lg text-gray-400 max-w-xl mb-16">
           Things I&apos;ve built — mostly for fun and to learn.
         </p>
-        <div className="grid grid-cols-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4">
           {projects.map((project, i) => (
             <div key={project.title} className={`px-2 pb-4 card-animate ${project.square ? "col-span-1 aspect-square" : "col-span-2 aspect-[2]"}`} style={{ animationDelay: `${i * 0.05}s` }}>
               <ProjectCard {...project} />

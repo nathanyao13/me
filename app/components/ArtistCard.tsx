@@ -27,7 +27,7 @@ export default function ArtistCard({ name, image, href }: { name: string; image?
         <span className="inline-block bg-blue-200 text-blue-700 text-xs font-semibold px-3 py-1 rounded mb-3 tracking-widest uppercase">
           Artist
         </span>
-        <h2 className="text-4xl font-light text-white leading-tight">{name}</h2>
+        <h2 className="text-2xl lg:text-4xl font-light text-white leading-tight">{name}</h2>
       </div>
 
     </Link>
