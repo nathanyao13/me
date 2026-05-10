@@ -23,7 +23,7 @@ export default function SongCard({ title, artist, image, href }: {
         )}
       </div>
 
-      <div className="flex flex-col justify-center w-1/2 pl-4">
+      <div className="flex flex-col justify-center w-1/2 pl-4 pt-8">
         <span className="inline-block w-fit bg-red-200 text-red-700 text-xs font-semibold px-3 py-1 rounded mb-3 tracking-widest uppercase">
           Song
         </span>

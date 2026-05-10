@@ -25,7 +25,7 @@ export default function Hobbies() {
   return (
     <div className="py-12">
       <div className="max-w-screen-2xl mx-auto px-8">
-        <h1 className="text-4xl lg:text-6xl font-thin text-gray-900 mb-6">hobbies.</h1>
+        <h1 className="text-4xl lg:text-6xl font-thin text-gray-900 mb-6 text-center lg:text-left">hobbies.</h1>
         <p className="text-lg text-gray-400 max-w-xl mb-16">
           A collection of my favorite forms of entertainment.
         </p>

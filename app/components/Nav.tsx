@@ -27,7 +27,7 @@ export default function Nav() {
 
   return (
     <nav className="py-4 font-sans">
-      <div className="max-w-screen-2xl mx-auto px-8 flex items-center justify-between">
+      <div className="max-w-screen-2xl mx-auto px-8 flex items-center justify-center sm:justify-between">
         <div
           className="relative flex items-center border border-gray-200 rounded-lg px-1 py-1 gap-1"
           onMouseLeave={() => setHighlight(h => ({ ...h, visible: false }))}
