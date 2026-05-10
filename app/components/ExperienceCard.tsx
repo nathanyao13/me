@@ -7,7 +7,7 @@ export default function ExperienceCard({ company, role, date, description, href 
   description: string;
   href?: string;
 }) {
-  const isExternal = href?.startsWith('http');
+  const isExternal = href?.startsWith('http') || href?.endsWith('.pdf');
   return (
     <Link href={href ?? '#'} target={isExternal ? '_blank' : undefined} rel={isExternal ? 'noopener noreferrer' : undefined} className="group flex flex-col h-full w-full overflow-hidden rounded-xl bg-gray-100 p-4">
 
