@@ -3,6 +3,7 @@ import HobbyCard from '@/app/components/HobbyCard';
 const hobbies = [
   { name: 'Arsenal',              badge: 'Sports',   image: '/images/bukayo_pop.png',    variant: 'artist' as const },
   { name: 'STLCITYSC Academy',    badge: 'Sports',   image: '/images/soccer_1.jpg',      variant: 'album'  as const },
+  { name: 'Piano Recital (2015)',           badge: 'Piano',     image: '/images/piano.jpeg',      variant: 'album'  as const },
   { name: 'CMU Men\'s Soccer',    badge: 'Sports',   image: '/images/soccer_2.jpeg',     variant: 'album'  as const },
   { name: 'Russell Westbrook',    badge: 'Sports',   image: '/images/westbrook_pop.png', variant: 'artist' as const },
   { name: 'Chicago Bulls',        badge: 'Sports',   image: '/images/basketball.JPG',    variant: 'album'  as const },
@@ -26,7 +27,7 @@ export default function Hobbies() {
     <div className="py-12">
       <div className="max-w-screen-2xl mx-auto px-8">
         <h1 className="text-4xl lg:text-6xl font-thin text-gray-900 mb-6 text-center lg:text-left">hobbies.</h1>
-        <p className="text-lg text-gray-400 max-w-xl mb-16">
+        <p className="text-lg text-gray-400 max-w-xl mb-16 text-center lg:text-left">
           A collection of my favorite forms of entertainment.
         </p>
         <div className="grid grid-cols-2 lg:grid-cols-4">
