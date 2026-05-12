@@ -1,12 +1,17 @@
+import Link from 'next/link';
+
+
 export default function SongCard({ title, artist, image, href }: {
   title: string;
   artist: string;
   image?: string;
   href?: string;
 }) {
-  return (
-    <a href={href} target="_blank" rel="noopener noreferrer" className="group relative flex h-full w-full overflow-hidden rounded-xl bg-gray-100 p-5">
+  const isExternal = href?.startsWith('http');
+  const cls = "group relative flex h-full w-full overflow-hidden rounded-xl bg-gray-100 p-5";
 
+  const inner = (
+    <>
       {/* Top bar: "Music" label + arrow button */}
       <div className="absolute top-3 left-4 right-3 flex items-center justify-between z-10">
         <p className="text-sm text-gray-500">Music</p>
@@ -34,7 +39,11 @@ export default function SongCard({ title, artist, image, href }: {
         <h3 className="text-sm sm:text-xl font-semibold text-gray-900 leading-tight mb-1">{title}</h3>
         <p className="text-sm text-gray-400">{artist}</p>
       </div>
-
-    </a>
+    </>
   );
+
+  if (isExternal) {
+    return <a href={href} target="_blank" rel="noopener noreferrer" className={cls}>{inner}</a>;
+  }
+  return <Link href={href ?? '#'} className={cls}>{inner}</Link>;
 }
