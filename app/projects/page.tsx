@@ -40,7 +40,7 @@ export default function Projects() {
       <div className="max-w-screen-2xl mx-auto px-8">
         <h1 className="text-4xl lg:text-6xl font-thin text-gray-900 mb-6 text-center lg:text-left">projects.</h1>
         <p className="text-lg text-gray-400 max-w-xl mb-16 text-center lg:text-left">
-          Things I&apos;ve built — mostly for fun and to learn.
+          Things I&apos;ve built — mostly for fun and to learn. I have recently been interested in Reinforcement Learning and Distributed Systems.
         </p>
         <div className="grid grid-cols-2 lg:grid-cols-4">
           {projects.map((project, i) => (

@@ -7,6 +7,7 @@ const badgeColors: Record<string, { pill: string; solid: string }> = {
   Outdoors: { pill: 'bg-green-200 text-green-700',   solid: 'bg-green-600/80'  },
   Film:     { pill: 'bg-yellow-200 text-yellow-700', solid: 'bg-yellow-600/80' },
   Anime:    { pill: 'bg-amber-200 text-amber-700',   solid: 'bg-amber-600/80'  },
+  Books:    { pill: 'bg-stone-200 text-stone-700',   solid: 'bg-stone-600/80'  },
 };
 
 const defaultColors = { pill: 'bg-gray-200 text-gray-700', solid: 'bg-gray-600/80' };
@@ -41,7 +42,7 @@ export default function HobbyCard({ name, badge, image, href, variant = 'artist'
   name: string; badge: string; image?: string; href?: string; variant?: 'artist' | 'album';
 }) {
   const colors = badgeColors[badge] ?? defaultColors;
-  const cls = "group relative block h-full w-full overflow-hidden rounded-xl bg-gray-100";
+  const cls = "group relative block h-full w-full overflow-hidden rounded-xl bg-[#E3D5CA]";
   const inner = <Inner name={name} badge={badge} image={image} variant={variant} colors={colors} />;
 
   if (href) {

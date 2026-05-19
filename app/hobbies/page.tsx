@@ -5,6 +5,7 @@ const hobbies = [
   { name: 'Jersey Shore',         badge: 'Outdoors', image: '/images/hike_2.jpeg',       variant: 'album'  as const },
   { name: 'STLCITYSC Academy',    badge: 'Sports',   image: '/images/soccer_1.jpg',      variant: 'album'  as const },
   { name: 'Piano Recital (2015)',           badge: 'Piano',     image: '/images/piano.jpeg',      variant: 'album'  as const },
+  { name: 'Now That You Mention It',      badge: 'Books',    image: '/images/now_that_you_mention_it.jpg',        variant: 'album' as const },
   { name: 'CMU Men\'s Soccer',    badge: 'Sports',   image: '/images/soccer_2.jpeg',     variant: 'album'  as const },
   { name: 'Russell Westbrook',    badge: 'Sports',   image: '/images/westbrook_pop.png', variant: 'artist' as const },
   { name: 'La La Land',           badge: 'Film',     image: '/images/lalaland.jpg',      variant: 'album'  as const },
@@ -18,8 +19,9 @@ const hobbies = [
   { name: 'Terraria',             badge: 'Gaming',   image: '/images/terraria_pop.png',  variant: 'artist' as const },
   { name: 'Seattle',              badge: 'Outdoors', image: '/images/hike_3.jpeg',       variant: 'album'  as const },
   { name: '500 Days of Summer',   badge: 'Film',     image: '/images/500_days.jpg',      variant: 'album'  as const },
+  { name: 'The Perks of Being a Wallflower', badge: 'Books', image: '/images/perks_of_being_a_wallflower.jpg',  variant: 'album' as const },
   { name: 'Copa Del Rey Semifinal',badge: 'Sports',  image: '/images/soccer_5.jpeg',     variant: 'album'  as const },
-  { name: 'Barcelona',            badge: 'Outdoors', image: '/images/hike_4.jpeg',       variant: 'album'  as const },
+  { name: 'Barcelona',                    badge: 'Outdoors', image: '/images/hike_4.jpeg',                        variant: 'album' as const },
 ];
 
 export default function Hobbies() {

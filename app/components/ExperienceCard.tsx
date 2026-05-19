@@ -9,7 +9,7 @@ export default function ExperienceCard({ company, role, date, description, href 
 }) {
   const isExternal = href?.startsWith('http') || href?.endsWith('.pdf');
   return (
-    <Link href={href ?? '#'} target={isExternal ? '_blank' : undefined} rel={isExternal ? 'noopener noreferrer' : undefined} className="group flex flex-col h-full w-full overflow-hidden rounded-xl bg-gray-100 p-4">
+    <Link href={href ?? '#'} target={isExternal ? '_blank' : undefined} rel={isExternal ? 'noopener noreferrer' : undefined} className="group flex flex-col h-full w-full overflow-hidden rounded-xl bg-[#E3D5CA] p-4">
 
       <div className="flex items-center justify-between mb-auto">
         <p className="text-sm text-gray-400">Experience</p>
