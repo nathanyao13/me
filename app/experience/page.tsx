@@ -5,7 +5,7 @@ const experiences = [
     company: 'Applovin',
     role: 'Software Engineer Intern',
     date: 'Summer 2026',
-    description: 'Current Internship. Ads Experience Team.',
+    description: 'Full-Stack, Data Science, and Backend Optimization on the Ads Experience Team.',
     href: 'https://www.applovin.com/en',
   },
   {
