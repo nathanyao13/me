@@ -17,14 +17,14 @@ export default function Home() {
           {/* Text */}
           <div className="flex-1 flex flex-col justify-center gap-6">
             <p className="text-2xl lg:text-4xl text-gray-400 leading-relaxed">
-              Hello! ✌️ My name is Nathan Yao. I enjoy solving problems using{" "}
+              Hello! My name is Nathan Yao. I enjoy solving problems using{" "}
               <Keyword href="/projects" color="#3b82f6">software</Keyword> tools.
               I am currently studying Machine Learning and Computer Science at{" "}
-              <Keyword href="https://www.cmu.edu" color="#c41230" external squiggly>Carnegie Mellon</Keyword> 🍉.
+              <Keyword href="https://www.cmu.edu" color="#c41230" external squiggly>Carnegie Mellon</Keyword>.
             </p>
             <p className="text-2xl lg:text-4xl text-gray-400 leading-relaxed">
               Outside of school, I am a student-athlete on{" "}
-              <Keyword href="https://athletics.cmu.edu/sports/msoc/index" color="#c41230" external squiggly>CMU Men&apos;s Soccer Team</Keyword> ⚽.
+              <Keyword href="https://athletics.cmu.edu/sports/msoc/index" color="#c41230" external squiggly>CMU Men&apos;s Soccer Team</Keyword>.
               I am interested in{" "}
               <Keyword href="/music" color="#6116a3">Music</Keyword>,{" "}
               <Keyword href="/hobbies" color="#16a34a">Sports</Keyword>,{" "}
@@ -43,7 +43,7 @@ export default function Home() {
           </div>
 
           {/* Photo */}
-          <div className="group relative w-full lg:w-80 xl:w-96 min-h-[320px] lg:min-h-0 flex-shrink-0 overflow-hidden rounded-xl bg-[#E3D5CA]">
+          <div className="group relative w-full lg:w-80 xl:w-96 min-h-[320px] lg:min-h-0 flex-shrink-0 overflow-hidden rounded-xl bg-gray-100">
             <img src="/images/me.jpeg" alt="Nathan" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
             <div className="absolute inset-0 bg-black/20 transition-opacity duration-500 group-hover:opacity-0" />
             <div className="absolute bottom-0 left-0 right-0 p-4 transition-opacity duration-500 group-hover:opacity-0">

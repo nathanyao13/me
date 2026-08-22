@@ -10,7 +10,7 @@ export default function ProjectCard({ title, link, image }: {
   const isExternal = link?.startsWith('http');
   const linkProps = { href: link, target: isExternal ? '_blank' as const : undefined, rel: isExternal ? 'noopener noreferrer' : undefined};
   return (
-    <div className="group h-full w-full overflow-hidden rounded-xl bg-[#E3D5CA] hover:bg-[#D6CCC2] transition-colors duration-300">
+    <div className="group h-full w-full overflow-hidden rounded-xl bg-gray-100 hover:bg-gray-200 transition-colors duration-300">
       <div className="relative isolate h-full w-full">
         <div className="flex items-center justify-between pl-4 pr-2 pt-3 pb-6 text-sm text-gray-500">
           <p>Projects · {title}</p>

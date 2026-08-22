@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function AlbumCard({ title, image, href }: { title: string; image?: string; href?: string }) {
   const isExternal = href?.startsWith('http');
   return (
-    <Link href={href ?? '#'} target={isExternal ? '_blank' : undefined} rel={isExternal ? 'noopener noreferrer' : undefined} className="group relative block h-full w-full overflow-hidden rounded-xl bg-[#E3D5CA]">
+    <Link href={href ?? '#'} target={isExternal ? '_blank' : undefined} rel={isExternal ? 'noopener noreferrer' : undefined} className="group relative block h-full w-full overflow-hidden rounded-xl bg-gray-100">
 
       {image && (
         <img src={image} alt={title} className="absolute inset-0 h-full w-full object-cover z-0 transition-transform duration-500 group-hover:translate-y-[20%]" />

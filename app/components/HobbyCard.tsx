@@ -42,7 +42,7 @@ export default function HobbyCard({ name, badge, image, href, variant = 'artist'
   name: string; badge: string; image?: string; href?: string; variant?: 'artist' | 'album';
 }) {
   const colors = badgeColors[badge] ?? defaultColors;
-  const cls = "group relative block h-full w-full overflow-hidden rounded-xl bg-[#E3D5CA]";
+  const cls = "group relative block h-full w-full overflow-hidden rounded-xl bg-gray-100";
   const inner = <Inner name={name} badge={badge} image={image} variant={variant} colors={colors} />;
 
   if (href) {

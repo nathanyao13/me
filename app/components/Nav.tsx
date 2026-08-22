@@ -29,11 +29,11 @@ export default function Nav() {
     <nav className="py-4 font-sans">
       <div className="max-w-screen-2xl mx-auto px-8 flex items-center justify-center sm:justify-between">
         <div
-          className="relative flex items-center border-2 border-[#D5BDAF] rounded-lg px-1 py-1 gap-1"
+          className="relative flex items-center border border-gray-200 rounded-lg px-1 py-1 gap-1"
           onMouseLeave={() => setHighlight(h => ({ ...h, visible: false }))}
         >
           <div
-            className="absolute rounded-md bg-[#D6CCC2] transition-all duration-150"
+            className="absolute rounded-md bg-gray-100 transition-all duration-150"
             style={{ left: highlight.left, width: highlight.width, top: 4, bottom: 4, opacity: highlight.visible ? 1 : 0 }}
           />
           {navItems.map((item) => (
@@ -42,7 +42,7 @@ export default function Nav() {
               href={item.href}
               onMouseEnter={handleMouseEnter}
               className={`relative z-10 px-2 sm:px-3 py-1 rounded-md text-sm ${
-                pathname === item.href ? 'font-semibold text-gray-800' : 'text-gray-500'
+                pathname === item.href ? 'font-semibold text-gray-900' : 'text-gray-500'
               }`}
             >
               {item.label}

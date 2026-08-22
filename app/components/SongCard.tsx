@@ -8,7 +8,7 @@ export default function SongCard({ title, artist, image, href }: {
   href?: string;
 }) {
   const isExternal = href?.startsWith('http');
-  const cls = "group relative flex h-full w-full overflow-hidden rounded-xl bg-[#E3D5CA] p-5";
+  const cls = "group relative flex h-full w-full overflow-hidden rounded-xl bg-gray-100 p-5";
 
   const inner = (
     <>
