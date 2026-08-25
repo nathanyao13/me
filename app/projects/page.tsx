@@ -32,6 +32,13 @@ const projects = [
     link: "https://github.com/nathanyao13/Geometry-Dash-Mini",
     image: "/images/geometry_dash.png",
   },
+  {
+    title: "LeetCode Of The Day ",
+    description: "Sends a random LeetCode problem to the LC OTD iMessage group chat once a day.",
+    link: "https://github.com/nathanyao13/lc_otd",
+    image: "/images/lc_otd.png",
+    square: true,
+  },
 ];
 
 export default function Projects() {
